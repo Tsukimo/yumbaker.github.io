@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Мои соцсети</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 32px;
+            padding: 40px 28px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+            transition: transform 0.2s ease;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #1e1e2f;
+            margin-bottom: 8px;
+        }
+
+        .bio {
+            color: #5a5a72;
+            font-size: 14px;
+            margin-bottom: 32px;
+            padding: 0 8px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 20px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.25s ease;
+            background: #f2f2f6;
+            color: #1c1c1e;
+        }
+
+        .social-btn:hover {
+            transform: scale(1.02);
+            filter: brightness(0.96);
+        }
+
+        /* Telegram */
+        .btn-telegram {
+            background: #e8f4ff;
+            color: #0088cc;
+        }
+        .btn-telegram .icon {
+            background: #0088cc;
+        }
+
+        /* Instagram */
+        .btn-instagram {
+            background: linear-gradient(135deg, #ffe8f0, #f0e6ff);
+            color: #c32aa3;
+        }
+
+        .icon {
+            font-size: 26px;
+            width: 32px;
+            text-align: center;
+        }
+
+        .footer-note {
+            border-top: 1px solid #e9e9ef;
+            padding-top: 24px;
+            font-size: 13px;
+            color: #8e8e9e;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 32px 20px;
+            }
+            .social-btn {
+                padding: 14px 16px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar">
+            👤
+        </div>
+        <h1>YUMBAKER</h1>
+        <div class="bio">
+            ✨ На связи в соцсетях — добавляйтесь!
+        </div>
+
+        <div class="links">
+            <!-- 👇👇👇 ЗАМЕНИТЕ ССЫЛКИ НА СВОИ 👇👇👇 -->
+            <a href="https://t.me/yumbaker_com" class="social-btn btn-telegram" target="_blank">
+                <span class="icon">📱</span>
+                Telegram
+            </a>
+            <a href="https://www.instagram.com/yumbaker" class="social-btn btn-instagram" target="_blank">
+                <span class="icon">📷</span>
+                Instagram
+            </a>
+            <!-- 👆👆👆 ЗАМЕНИТЕ ССЫЛКИ 👆👆👆 -->
+
+            <!-- При желании можно добавить ещё соцсети (убрать комментарии) -->
+            <!--
+            <a href="https://vk.com/ваш_vk" class="social-btn btn-vk" target="_blank">
+                <span class="icon">🎵</span>
+                VK
+            </a>
+            <a href="https://wa.me/79001234567" class="social-btn btn-whatsapp" target="_blank">
+                <span class="icon">💬</span>
+                WhatsApp
+            </a>
+            -->
+        </div>
+
+        <div class="footer-note">
+            Нажмите на кнопку — перейдёте в соцсеть
+        </div>
+    </div>
+</body>
+</html>
